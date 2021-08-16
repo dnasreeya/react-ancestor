@@ -12,7 +12,7 @@ const CreatePage = () => {
   const [currentTitle, setCurrentTitle] = useState("");
   const [uploadedFile, setUploadedFile] = useState<UploadFile[]>(null);
 
-  const handleSubmit = async () => {
+  const Submit = async () => {
     console.log("currentName", currentName);
     console.log("currentTitle", currentTitle);
     console.log("uploadedFile", uploadedFile);
@@ -81,7 +81,7 @@ const CreatePage = () => {
           </Col>
         </Row>
         <Row justify="center">
-          <Button type="primary" onClick = {handleSubmit}>Submit</Button>
+          <Button type="primary" onClick = {Submit}>Submit</Button>
         </Row>
       </Col>
     </Row>
