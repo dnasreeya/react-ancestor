@@ -6,6 +6,7 @@ import { NextPage } from "next";
 import { useState } from "react";
 import CatCard from "../components/CatCard";
 import { Row, Col } from "antd";
+import Link from "next/link";
 
 interface HomeProps {
   posts: CatPost[];
@@ -30,6 +31,8 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
         </Row>
       </main>
       <footer className={styles.footer}>
+        <Link href = "/stat"> Stat Page </Link>
+        <Link href = "/create"> Create Page </Link>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
